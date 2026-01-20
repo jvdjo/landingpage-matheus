@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <header class="hero" id="inicio">
+    <!-- Header / Navigation -->
+    <header class="header" id="inicio">
         <nav class="nav">
             <a href="#inicio" class="nav-logo">
                 <img src="assets/logo-light.png" alt="Mateus Bellotto - Psicólogo clínico">
@@ -31,27 +31,41 @@
                 <li><a href="#psicoterapia">Psicoterapia</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <a href="#contato" class="btn-header">Agendar atendimento</a>
         </nav>
+    </header>
 
-        <div class="hero-content">
-            <div class="hero-text">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-card">
                 <h1>A vida é mais plena quando você confia em si mesmo.</h1>
-                <p class="hero-subtitle">A terapia é um espaço seguro de autoconhecimento, onde você pode explorar suas
-                    emoções, superar desafios e desenvolver ferramentas para viver de forma mais equilibrada e
-                    consciente.</p>
-
-                <div class="hero-tags">
-                    <span class="tag">Autoconhecimento</span>
-                    <span class="tag">Qualidade de vida</span>
-                    <span class="tag">Autoestima</span>
-                </div>
+                <p class="hero-subtitle">A terapia é um espaço onde você aprende se olhar com gentileza, a acolher suas
+                    emoções e a transformar a forma como se enxerga, porque cuidar de si, é o primeiro ato de confiança.
+                </p>
             </div>
-
             <div class="hero-image">
                 <img src="assets/hero-image.jpg" alt="Ambiente acolhedor de consultório com sofá e plantas">
             </div>
         </div>
-    </header>
+    </section>
+
+    <!-- Tags Section -->
+    <section class="tags-section">
+        <h2>Em que a terapia pode apoiar você?</h2>
+        <div class="tags-container">
+            <span class="tag">Autoconhecimento</span>
+            <span class="tag">Qualidade de vida</span>
+            <span class="tag">Autoestima</span>
+            <button class="tag-arrow" aria-label="Ver mais">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
 
     <!-- Sobre Section -->
     <section class="sobre" id="sobre">
@@ -60,14 +74,14 @@
                 <div class="sobre-image">
                     <img src="assets/mateus-foto.jpg" alt="Mateus Bellotto - Psicólogo">
                 </div>
+                <div class="sobre-name-tag">
+                    <span class="name-title">Psicólogo Mateus Bellotto</span>
+                    <span class="name-crp">CRP 12/XXXXX</span>
+                </div>
             </div>
 
             <div class="sobre-content">
-                <div class="decorative-circles">
-                    <div class="circle-solid"></div>
-                    <div class="circle-outline circle-1"></div>
-                    <div class="circle-outline circle-2"></div>
-                </div>
+                <div class="decorative-circle"></div>
 
                 <h2>Olá, eu sou o Mateus!!</h2>
 
@@ -78,8 +92,6 @@
 
                 <p>Na terapia, busco te ajudar a identificar esses padrões e construir, passo a passo, formas mais leves
                     e conscientes de se relacionar com suas emoções e com o mundo ao seu redor.</p>
-
-                <a href="#contato" class="btn-agendar">Agendar Atendimento</a>
             </div>
         </div>
     </section>
@@ -88,23 +100,26 @@
     <section class="psicoterapia" id="psicoterapia">
         <h2>Para quem é a psicoterapia?</h2>
 
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/jovens.jpg" alt="Psicoterapia para Jovens">
+        <div class="psicoterapia-container">
+            <div class="psicoterapia-content">
+                <div class="psicoterapia-item">
+                    <h3>PSICOTERAPIA PARA JOVENS</h3>
+                    <p>Psicoterapia individual voltada para o público adolescente, dos 12 aos 18 anos, buscando
+                        acompanhar as dificuldades dessa adolescência, onde podemos enfrentar desafios próprios da vida
+                        e auxiliar na construção da sua identidade, realizada online ou presencialmente no espaço
+                        casa.</p>
                 </div>
-                <h3>PSICOTERAPIA PARA JOVENS</h3>
-                <p>Um espaço seguro para adolescentes e jovens adultos explorarem suas emoções, desenvolverem
-                    autoconhecimento e enfrentarem os desafios dessa fase de transição.</p>
+
+                <div class="psicoterapia-item">
+                    <h3>PSICOTERAPIA PARA ADULTOS</h3>
+                    <p>Psicoterapia individual voltada para o público adulto, a partir dos 18 anos, buscando
+                        promover autoconhecimento e autonomia, além de sanar os sofrimentos pessoais, realizada online
+                        ou presencialmente no espaço casa.</p>
+                </div>
             </div>
 
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/adultos.jpg" alt="Psicoterapia para Adultos">
-                </div>
-                <h3>PSICOTERAPIA PARA ADULTOS</h3>
-                <p>Apoio para lidar com ansiedade, estresse, relacionamentos e outras questões do dia a dia, buscando
-                    equilíbrio emocional e qualidade de vida.</p>
+            <div class="psicoterapia-image">
+                <img src="assets/adultos.jpg" alt="Psicoterapia para Adultos">
             </div>
         </div>
     </section>
@@ -112,48 +127,46 @@
     <!-- Contato / Footer Section -->
     <footer class="contato" id="contato">
         <div class="contato-container">
-            <div class="contato-info">
-                <h2>ENTRE EM CONTATO</h2>
-
-                <div class="contato-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    <a href="mailto:mateusbelotto.psi@gmail.com">mateusbelotto.psi@gmail.com</a>
-                </div>
-
-                <div class="contato-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                    <a href="tel:+5548998261672">(48) 99826-1672</a>
-                </div>
-
-                <div class="contato-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <span>Florianópolis - SC</span>
-                </div>
-            </div>
-
             <div class="contato-mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.63028929498!2d-48.5543847!3d-27.5945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527388a0c7e71b1%3A0xac3d0b7c6a3b88c!2sFlorianopolis%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1705081234567!5m2!1spt-BR!2sbr"
-                    width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                    width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+                <div class="mapa-pin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#7B2D26"
+                        stroke="#7B2D26" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" fill="white" />
+                    </svg>
+                </div>
             </div>
-        </div>
 
-        <div class="footer-logo">
-            <img src="assets/logo-light.png" alt="Mateus Bellotto - Psicólogo clínico">
+            <div class="contato-info">
+                <h2>ENTRE EM CONTATO</h2>
+
+                <a href="mailto:mateusbelotto.psi@gmail.com" class="contato-link">
+                    <span>mateusbelotto.psi@gmail.com</span>
+                </a>
+
+                <a href="tel:+5548998088357" class="contato-link phone">
+                    <span>(48) 9908-8357</span>
+                </a>
+
+                <a href="https://wa.me/5548998088357" class="btn-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+
+                <div class="contato-logo-card">
+                    <img src="assets/logo-bordo.png" alt="Mateus Bellotto">
+                    <span>MATEUS BELLOTTO</span>
+                </div>
+            </div>
         </div>
 
         <div class="footer-credits">
